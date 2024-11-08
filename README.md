@@ -1,5 +1,5 @@
 # xche2349_9103_tut6
-#### Applying userinput to our work **Bold Text**
+# Applying userinput to our work **Bold Text**
 ## Interaction Instructions
 To engage with the animation, move your mouse across the canvas to trigger color changes for the small dots. For more dynamic interaction:
 
