@@ -37,11 +37,19 @@ The primary inspiration for my animation’s extended effects came from Erik Sö
 
 In the setup function, I created a 750x750 canvas and used the random function to generate a random color for the CircleColor array, which is used to color the shapes drawn later.
 
-**Drawing Circles and Small Circles**:The drawAllCircle function uses drawSmallCircle to place multiple small circles at different locations on the canvas, creating a dotted effect. Each small circle is colored using CircleColor, and when wantColor is set to true, it introduces slight shifts to simulate a trembling effect.
+**Drawing Circles and Small Circles**:
+The drawAllCircle function uses drawSmallCircle to place multiple small circles at different locations on the canvas, creating a dotted effect. Each small circle is colored using CircleColor, and when wantColor is set to true, it introduces slight shifts to simulate a trembling effect.
 The drawCircle function draws a large circle, where smaller circles and rectangles create a fading effect inside. The colors are controlled by the color1, color2, and color3 parameters. Each frame adjusts the circle's size and position slightly, giving it a dynamic appearance.
-**Particle Animation with Mouse Events**:When the mouse is pressed, the mousePressed function is triggered, creating multiple instances of the Particle class and storing them in the particles array. Each Particle object has a random initial position, size, speed, and transparency, which determine its movement path and gradual fading effect.
+
+**Particle Animation with Mouse Events**:
+When the mouse is pressed, the mousePressed function is triggered, creating multiple instances of the Particle class and storing them in the particles array. Each Particle object has a random initial position, size, speed, and transparency, which determine its movement path and gradual fading effect.
 In the draw function, I loop through the particles array, calling each particle's update and show methods to display and update their positions on the screen. If a particle's transparency is below a threshold, it is removed from the array to maintain smooth particle animations.
-**Interactive Features**:The wantColor variable is updated to true or false when the mouse is pressed or released, controlling color changes and trembling effects of the shapes.
-**The keyPressed function monitors keyboard input**: pressing the spacebar activates the startDraw function, which controls the cycle of expansion and contraction effects using TWO_PI_Number. Pressing Enter clears the animation by resetting TWO_PI_Number.
+
+**Interactive Features**:
+The wantColor variable is updated to true or false when the mouse is pressed or released, controlling color changes and trembling effects of the shapes.
+
+**The keyPressed function monitors keyboard input**: 
+pressing the spacebar activates the startDraw function, which controls the cycle of expansion and contraction effects using TWO_PI_Number. Pressing Enter clears the animation by resetting TWO_PI_Number.
+
 **Timer Loop**:
 In the startDraw function, I use setInterval to control the increase and decrease of TWO_PI_Number, creating a looping animation effect. When TWO_PI_Number reaches a threshold, the interval switches direction, repeating the cycle.
