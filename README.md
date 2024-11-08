@@ -31,7 +31,7 @@ The primary inspiration for my animation’s extended effects came from Erik Sö
 
 [Söderberg's Geometric work] (https://i.pinimg.com/originals/db/04/21/db0421f62db187166d05455fb9febf53.gif)
 
-## **coding process**（The following content was crafted with assistance from ChatGPT to enhance language clarity and logic.）
+## **My coding process**（The following content was crafted with assistance from ChatGPT to enhance language clarity and logic.）
 
 **Setup and Initializing Colors**:
 
